@@ -1,0 +1,23 @@
+:root {
+  --tile-width: 32px;
+  --tile-height: 32px;
+}
+
+.black {
+  background: #222;
+}
+
+.white {
+  background: #eee;
+}
+
+#chessboard > div {
+  width: var(--tile-width);
+  height: var(--tile-height);
+}
+
+#chessboard {
+  display: grid;
+  grid-template-columns: repeat(8, 32px);
+  grid-template-rows: repeat(4, 32px);
+}
